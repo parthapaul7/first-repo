@@ -1,0 +1,251 @@
+body{
+            
+    border: 0px;
+    margin: 0px;
+    background-color:wheat;
+    color: white;
+    
+    
+}
+.topbar{
+    position: static;
+    padding:10px;
+    padding-left: 14px;
+    height: 40px;
+    width: 98%;
+    background-color: black;
+    
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr 1fr;
+    justify-content:left;
+    
+}
+#logo{
+    color: white;
+    width: 80%;
+    max-width: 140px;
+    
+    
+}
+
+.sidebar{
+    height: 80%;
+    background-color: black;
+    position: fixed;
+    width: 14%;
+
+    display: grid;
+    grid-template-rows: 40px 40px 40px 30px 30px 30px;
+    grid-template-columns: 100%;
+    padding: 7px;
+   
+}
+.controls{
+   
+    background-color:rgb(44, 44, 44);
+    position:fixed;
+    bottom: 0px;
+    height: 12%;
+    width: 100%;
+    padding: 10px;
+
+    border-top: 2px solid rgb(197, 191, 191);
+    
+    display: grid;
+    grid-template-columns: 20% 10% repeat(5 ,5%)  10% 7% 3% 3% 15% 5%;
+    grid-template-rows: 40px 40px;
+    justify-content: right; 
+
+    
+}
+.main{
+    
+    position: absolute;
+    right: 0px;
+    width: 82%;
+    height: 77%;
+    overflow: scroll;
+    
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    row-gap: 15px;
+    column-gap: 15px;
+    background-color: rgba(44, 44, 44);
+    padding-bottom: 30px;
+    padding-left: 3%;
+    
+
+
+}
+
+.tbutt{
+    
+    padding: 10px;
+    border-radius: 50%;    // this will not apply on buttons
+    
+    
+}
+
+.sbutt
+{
+    border: 5px;
+    
+    padding: 10px;
+    margin: 0px;
+    border-radius: 3px;
+}
+#home
+{
+    background-color:rgba(44, 44, 44);
+
+}
+#slider
+{   
+    grid-column-start: 2;
+    grid-column-end: 9;
+    margin: 5px;
+    width: 100%;
+    background-color:rgb(44, 44, 44);
+
+}
+#volume{
+    background-color: rgb(44, 44, 44);
+}
+
+#text1,#text2,#text3 
+{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    height: 60px;
+    
+}
+button{
+    border-radius: 10px;
+    border: 3px solid rgb(44, 44,44);
+    background-color: rgb(44, 44,44);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.562);
+    justify-content: center;
+    outline: none;
+}
+input[type=range]{
+    width: 100%;
+   
+}
+
+
+  h2{
+    margin: 0px;
+  }
+  
+  #play
+  {
+      padding: 8px;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+  }
+
+  #play:hover{
+      padding: 9px;
+  }
+
+  button:hover{
+      color: white;
+  }
+
+  #upgrade{
+      padding: 5px;
+      width: 100px;
+      border:1px solid white;
+
+  }
+  #upgrade:hover{
+      width: 105px;
+      height: 28px;
+  }
+
+  #menu{
+    padding: 5px;
+    width: 130px;
+    position: relative;
+    
+      
+  }
+  .box{
+     background-color:olive;
+     height: 250px;
+     position: relative;
+     transition: 1s;
+     border-radius: 5px;
+  }
+ 
+  .hover-play{
+      display: none;
+      opacity: 0;
+      padding: 10px;
+      border-radius: 50%;
+      background-color:rgb(7, 187, 7);
+      color:white;
+      position: absolute;
+      bottom: 70px;
+      right: 20px;
+      transition: 0.5s;
+     
+  }
+ 
+  .box:hover{
+     background-color:rgba(128, 128, 0, 0.541);
+     
+  }
+  .box:hover .hover-play
+  {
+    display: block;
+    opacity: 1;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:rgb(7, 187, 7);
+    color:white;
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+
+  }
+.image{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.651);
+    margin: 15px;
+    width: 80%;
+    height: 60%;
+    border-radius: 5px;
+}
+.song-name{
+    position: absolute;
+    bottom: 5px;
+    margin:15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: rgb(44, 44, 44);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    
+}
+.show {display:block;}
+.dropdown-content a {
+        color: white;
+        padding: 12px 14px;
+        text-decoration: none;
+        display: block;
+        
+      }
+      
+// just a line
+

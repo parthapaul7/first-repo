@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify web player</title>
+    <link rel="stylesheet" href="spotify.css">
+    <script src="https://kit.fontawesome.com/f9bb7b8b95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topbar">
+        <div ><img id="logo" src="logo.png"></div>
+
+        <div class="tbutt"> <button type="button"> <i class="fas fa-angle-left"></i></button>&nbsp; <button type="button"><i class="fas fa-angle-right"></i></button></div>
+
+        <div class="tbutt" title="upgrade to premium"><button type="submit" id="upgrade"><b>Upgrade</b></button></div>
+
+        <div  class="tbutt"> <button type="submit" id="menu" onclick="dropdown()"><i class="fas fa-user-circle"></i>&nbsp;your account  <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content" id="dropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+        
+        </div>
+      
+       
+
+    </div>
+
+
+    <div class="sidebar"> 
+
+        <div class="sbutt" id="home"> <i class="fas fa-home"></i> &nbsp;Home </div>
+        <a href="search.html" class="sbutt"><i class="fas fa-search"></i>&nbsp;Search</a>
+        <a href="library.html" class="sbutt"><i class="fas fa-grip-lines-vertical"></i> &nbsp;Your Library</a>
+        <div class="sbutt"> Playlists</div>
+        <div class="sbutt"><i class="fas fa-plus"></i>&nbsp;Create Playlists</div>
+        <div class="sbutt"><i class="fas fa-heart"></i>&nbsp;Liked songs <hr></div>
+        
+    </div>
+    
+
+    <div class="main">
+    
+    <div id="text1"><p> <h2> The Top Podcast of 2020</h2> our favourite new shows of the year</p>
+     </div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>DESPASITO<br> artists and gener</p> </div><button type="button" class="hover-play"  onclick="audio1()" ><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"><div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+
+    <div id="text2"> <p> <h2>The Best of 2020</h2> Dive into the best songs of 2020</p></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"><div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div>  <button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+
+    <div id="text3"><p><h2>Chill</h2> Unwind with these calming Playlists</p></div>
+     
+     <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>
+    <div class="box"> <div class="image"> image box</div> <div class="song-name"> <p>SONG NAME<br> artists and gener</p> </div><button type="button" class="hover-play"><i class="fas fa-play"></i> </button></div>  
+
+    </div>
+    
+    <div class="controls"> 
+        <div class="cbutt"></div>
+        <div class="cbutt"></div>
+        <div class="cbutt" title="suffle"><button type="button"><i class="fas fa-random"></i></button></div>
+        <div class="cbutt" title="previous"><button type="button"> <i class="fas fa-step-backward"></i> </button></div>
+        <div class="cbutt" title="play"  ><button type="button" id="play" onclick="audio1()"  ><i class="fas fa-play"></i></button></div>
+        <div class="cbutt" title="next"><button type="button"><i class="fas fa-step-forward"></i></button></div>
+        <div class="cbutt" title="repeat"><button type="button"><i class="fas fa-sync"></i></button></div>
+        <div class="cbutt"></div>
+
+        <div></div>
+        
+        <div class="cbutt" title="queue"><button type="button"><i class="fas fa-align-justify"></i></button></div>
+        <div class="cbutt" title="connect to a device"><button type="button"><i class="fas fa-laptop-house"></i></button></div>
+
+        <div class="cbutt" id="volume" title="volume"><input type="range" min="1" max="100" value="50"></div>
+        <div></div>
+ 
+        <div id="slider" class="cbutt"> <input type="range" id="slide" min="0" max="100" value="10" onchange="change_duration()"><span id="value">value</span </div>
+        
+
+    </div>
+
+
+    <audio id="myAudio">
+     <source src="despasito.mp3" id="ado1" type="audio/mpeg"> 
+        
+        Your browser does not support the audio element.
+      </audio>
+    
+<script>
+
+    let play= document.querySelector("#play");
+    let playSong= false;
+    let track= document.querySelector("#myAudio");
+    
+
+    
+
+    function dropdown(){
+    document.getElementById("dropdown").classList.toggle("show");  
+    }
+
+    // function audio1()
+    // {
+        
+    //     document.getElementById("ado1").play();
+    // }
+    
+    // function myAudio(){
+
+    //    document.getElementById("ado1").pause();
+    // }
+
+    function audio1()  // switch to play audio
+    {
+        if(playSong === false)
+        { track.play();
+            playSong=true;
+            console.log(playSong);
+            document.getElementById("play").innerHTML= `<i class="fas fa-pause"></i>`;
+            document.querySelector(".hover-play").innerHTML=`<i class="fas fa-pause"></i>`;
+            // changes the icons on play button 
+
+        }
+
+        else {
+        track.pause();
+        playSong=false;
+        console.log(playSong);
+        document.getElementById("play").innerHTML= `<i class="fas fa-play"></i>`;
+        document.querySelector(".hover-play").innerHTML=`<i class="fas fa-play"></i>`;
+        }
+    }
+
+    let slider= document.querySelector("#slide");
+    let output= document.querySelector("#value");
+
+    output.innerHTML= slider.value;
+
+    slider.oninput = function(){
+        output.innerHTML= slider.value;
+    }
+    function change_duration(){
+	slider_position = track.duration * (slider.value / 100);
+	track.currentTime = slider_position;
+}
+
+function range_slider(){
+	let position = 0;
+        
+        // update slider position
+		if(!isNaN(track.duration)){
+		   position = track.currentTime * (100 / track.duration);
+		   slider.value =  position;
+	      }
+
+       
+       // function will run when the song is over
+       if(track.ended){
+       	 play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+           if(autoplay==1){
+		       index_no += 1;
+		       load_track(index_no);
+		       playsong();
+           }
+	    }
+     }
+
+
+  
+</script>
+
+    
+</body>
+</html>
