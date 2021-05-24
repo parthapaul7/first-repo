@@ -86,10 +86,10 @@
         <div class="cbutt" title="queue"><button type="button"><i class="fas fa-align-justify"></i></button></div>
         <div class="cbutt" title="connect to a device"><button type="button"><i class="fas fa-laptop-house"></i></button></div>
 
-        <div class="cbutt" id="volume" title="volume"><input type="range" min="1" max="100" value="50"></div>
+        <div class="cbutt" id="volume" title="volume"><input type="range" min="1" max="100" value="0"></div>
         <div></div>
  
-        <div id="slider" class="cbutt"> <input type="range" id="slide" min="0" max="100" value="10" onchange="change_duration()"><span id="value">value</span </div>
+        <div id="slider" class="cbutt"> <input type="range" id="slide" min="0" max="10000" value="0" onchange="change_duration()"><span id="value"></span </div>
         
 
     </div>
@@ -149,13 +149,14 @@
     let slider= document.querySelector("#slide");
     let output= document.querySelector("#value");
 
-    output.innerHTML= slider.value;
+setInterval(function(){output.innerHTML= slider.value;},20);
+    
 
     slider.oninput = function(){
         output.innerHTML= slider.value;
     }
     function change_duration(){
-	slider_position = track.duration * (slider.value / 100);
+	slider_position = track.duration * (slider.value / 10000);
 	track.currentTime = slider_position;
 }
 
@@ -164,10 +165,10 @@ function range_slider(){
         
         // update slider position
 		if(!isNaN(track.duration)){
-		   position = track.currentTime * (100 / track.duration);
+		   position = track.currentTime * (10000 / track.duration);
 		   slider.value =  position;
 	      }
-
+        
        
        // function will run when the song is over
        if(track.ended){
@@ -179,7 +180,7 @@ function range_slider(){
            }
 	    }
      }
-
+     setInterval(function(){ range_slider(); }, 200);
 
   
 </script>
