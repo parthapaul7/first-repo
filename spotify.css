@@ -81,7 +81,8 @@ body{
 .tbutt{
     
     padding: 10px;
-    border-radius: 50%;    // this will not apply on buttons
+    border-radius: 50%;     
+    
     
     
 }
@@ -181,7 +182,7 @@ input[type=range]{
   }
  
   .hover-play{
-      display: none;
+      
       opacity: 0;
       padding: 10px;
       border-radius: 50%;
@@ -200,7 +201,6 @@ input[type=range]{
   }
   .box:hover .hover-play
   {
-    display: block;
     opacity: 1;
     padding: 10px;
     border-radius: 50%;
@@ -246,8 +246,6 @@ a{
         display: block;
         
       }
-      
-
 
 
 
